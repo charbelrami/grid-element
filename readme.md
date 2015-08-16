@@ -7,11 +7,18 @@
   - [Bower](#bower)
   - [npm](#npm)
 - [Usage](#usage)
-  - [index.html](#index.html)
+  - [index.html](#indexhtml)
   - [Running locally](#running-locally)
 - [Reference](#reference)
-  - [grid-element](#grid-element)
+  - [grid-element](#grid-element-1)
+    - [CSS Custom Properties](#css-custom-properties)
+    - [Attributes](#attributes)
+      - [Gutters](#gutters)
+      - [Children alignment](#children-alignment)
   - [grid-col](#grid-col)
+    - [Attributes](#attributes-1)
+      - [Column sizing](#column-sizing)
+      - [Individual alignment](#individual-alignment)
 - [Browser support](#browser-support)
 - [Contributing](#contributing)
 - [License](#license)
@@ -76,7 +83,7 @@ $ polyserve
 ```
 #### CSS Custom Properties
 
-- `--grid-gutter`: gutter size [default value: 10px]
+- `--grid-gutter`: gutter size [default value: `10px`]
 ```css
 --grid-gutter: 15px;
 ```
