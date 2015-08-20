@@ -1,0 +1,35 @@
+{
+  "name": "scrollreveal",
+  "description": "Easily reveal elements as they enter the viewport.",
+  "homepage": "https://github.com/julianlloyd/scrollReveal.js",
+  "main": [
+    "dist/scrollReveal.js"
+  ],
+  "authors": [
+    "Julian Lloyd"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "scroll",
+    "reveal",
+    "animation",
+    "JavaScript"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components"
+  ],
+  "version": "2.3.2",
+  "_release": "2.3.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "v2.3.2",
+    "commit": "3f205c018b79fc06f0a27ec330ffee69a07f8efe"
+  },
+  "_source": "git://github.com/julianlloyd/scrollReveal.js.git",
+  "_target": "~2.3.2",
+  "_originalSource": "scrollReveal.js",
+  "_direct": true
+}

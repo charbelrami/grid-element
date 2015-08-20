@@ -1,0 +1,28 @@
+{
+  "name": "grid-element",
+  "version": "0.1.0",
+  "homepage": "https://github.com/charbelrami/grid-element",
+  "authors": [
+    "Charbel Rami"
+  ],
+  "description": "Responsive grid element using Polymer and Flexbox",
+  "main": "grid-element.html",
+  "keywords": [
+    "grid",
+    "flexbox",
+    "polymer",
+    "web-component",
+    "web-components"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#~1.1.0"
+  }
+}

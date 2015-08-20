@@ -1,0 +1,38 @@
+{
+  "name": "flex-element",
+  "version": "0.1.0",
+  "homepage": "https://github.com/charbelrami/flex-element",
+  "authors": [
+    "Charbel Rami"
+  ],
+  "description": "Flexbox element",
+  "main": "flex-element.html",
+  "keywords": [
+    "flex",
+    "flexbox",
+    "polymer",
+    "web-component",
+    "web-components"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "~1.1.0"
+  },
+  "_release": "0.1.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.1.0",
+    "commit": "f7e99075713c997fea7527e94ab144dcd77fef2d"
+  },
+  "_source": "git://github.com/charbelrami/flex-element.git",
+  "_target": "~0.1.0",
+  "_originalSource": "flex-element",
+  "_direct": true
+}

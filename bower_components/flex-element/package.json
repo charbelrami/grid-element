@@ -1,0 +1,23 @@
+{
+  "name": "flex-element",
+  "version": "0.1.0",
+  "description": "Flexbox element",
+  "main": "flex-element.html",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charbelrami/flex-element.git"
+  },
+  "keywords": [
+    "flex",
+    "flexbox",
+    "polymer",
+    "web-component",
+    "web-components"
+  ],
+  "author": "Charbel Rami",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/charbelrami/flex-element/issues"
+  },
+  "homepage": "https://github.com/charbelrami/flex-element#readme"
+}

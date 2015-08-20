@@ -1,0 +1,597 @@
+<!doctype html>
+<!--Copyright (c) 2015 Charbel Rami. All rights reserved.-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Grid Element &middot; Responsive grid element using Polymer and Flexbox</title>
+    <meta name="description" content="Grid Element: responsive grid element using Polymer and Flexbox">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+    <link rel="import" href="bower_components/grid-element/grid-element.html">
+    <link rel="import" href="bower_components/flex-element/flex-element.html">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,400italic,600,600italic,700,900,700italic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="bower_components/octicons/octicons/octicons.css">
+
+    <link rel="stylesheet" href="style.min.css">
+  </head>
+  <body>
+    <header class="page-header" id="headroom">
+      <h1 class="page-title">Grid Element</h1>
+      <flex-element y-center>
+        <a data-scroll class="icon-page-header mega-octicon octicon-terminal" href="#cli"></a>
+        <a data-scroll class="icon-page-header mega-octicon octicon-gist" href="#usage"></a>
+        <a data-scroll class="icon-page-header mega-octicon octicon-settings" href="#settings"></a>
+        <a class="icon-page-header mega-octicon octicon-mark-github" href="https://github.com/charbelrami/grid-element"></a>
+      </flex-element>
+    </header>
+    <main>
+      <section class="section-main">
+        <h1 class="h1-section">Responsive grid element using Polymer and Flexbox</h1>
+        <grid-element ghi gho gvi gvo>
+          <grid-col data-sr="reset vFactor 0.2 wait 0.3s enter bottom move 100px over 1.5s">
+            <flex-element x-center y-center>
+              <svg class="icon-feature" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10 18h5V5h-5v13zm-6 0h5V5H4v13zM16 5v13h5V5h-5z"/>
+                  <path d="M0 0h24v24H0z" fill="none"/>
+              </svg>
+            </flex-element>
+          </grid-col>
+          <grid-col data-sr="reset vFactor 0.2 wait 0.3s enter top move 100px over 1.5s">
+            <flex-element x-center y-center>
+              <svg class="icon-feature" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 0h24v24H0z" fill="none"/>
+                  <path d="M4 6h18V4H4c-1.1 0-2 .9-2 2v11H0v3h14v-3H4V6zm19 2h-6c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h6c.55 0 1-.45 1-1V9c0-.55-.45-1-1-1zm-1 9h-4v-7h4v7z"/>
+              </svg>
+            </flex-element>
+          </grid-col>
+          <grid-col data-sr="reset vFactor 0.2 wait 0.3s enter bottom move 100px over 1.5s">
+            <flex-element x-center y-center>
+              <svg class="icon-feature" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 0h24v24H0V0z" fill="none"/>
+                  <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/>
+              </svg>
+            </flex-element>
+          </grid-col>
+          <grid-col data-sr="reset vFactor 0.2 wait 0.3s enter top move 100px over 1.5s">
+            <flex-element x-center y-center>
+              <svg class="icon-feature" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 0h24v24H0z" fill="none"/>
+                  <path d="M19 4h-4L7.11 16.63 4.5 12 9 4H5L.5 12 5 20h4l7.89-12.63L19.5 12 15 20h4l4.5-8z"/>
+              </svg>
+            </flex-element>
+          </grid-col>
+        </grid-element>
+      </section>
+      <section class="section-main" id="cli">
+        <h2 class="h2-section">Bower</h2>
+        <pre><code>$ bower install grid-element</code></pre>
+        <h2 class="h2-section">npm</h2>
+        <pre><code>$ npm install grid-element</code></pre>
+      </section>
+      <section class="section-main" id="usage">
+        <h2 class="h2-section">index.html</h2>
+        <pre><code>&lt;!doctype html>
+&lt;html>
+  &lt;head>
+    <span class="code-highlight">&lt;script src="bower_components/webcomponentsjs/webcomponents-lite.min.js">&lt;/script>
+    &lt;link rel="import" href="bower_components/grid-element/grid-element.html"></span>
+  &lt;/head>
+  &lt;body>
+    &lt;grid-element>
+      &lt;grid-col>&lt;/grid-col>
+      &lt;grid-col>&lt;/grid-col>
+      &lt;grid-col>&lt;/grid-col>
+      &lt;grid-col>&lt;/grid-col>
+    &lt;/grid-element>
+  &lt;/body>
+&lt;/html></code></pre>
+        <grid-element ghi gho gvi gvo>
+          <grid-col>
+            <flex-element x-center y-center>
+              <svg class="icon-feature icon-headline" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4 15h16v-2H4v2zm0 4h16v-2H4v2zm0-8h16V9H4v2zm0-6v2h16V5H4z"/>
+                  <path d="M0 0h24v24H0V0z" fill="none"/>
+              </svg>
+            </flex-element>
+            <flex-element x-center y-center>
+              <svg class="icon-feature" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"/>
+                  <path d="M0 0h24v24H0z" fill="none"/>
+              </svg>
+            </flex-element>
+          </grid-col>
+          <grid-col>
+            <flex-element x-center y-center>
+              <svg class="icon-feature" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"/>
+                  <path d="M0 0h24v24H0z" fill="none"/>
+              </svg>
+            </flex-element>
+          </grid-col>
+          <grid-col>
+            <flex-element x-center y-center>
+              <svg class="icon-feature" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"/>
+                  <path d="M0 0h24v24H0z" fill="none"/>
+              </svg>
+            </flex-element>
+          </grid-col>
+          <grid-col>
+            <flex-element x-center y-center>
+              <svg class="icon-feature" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"/>
+                  <path d="M0 0h24v24H0z" fill="none"/>
+              </svg>
+            </flex-element>
+          </grid-col>
+        </grid-element>
+      </section>
+      <section class="section-main" id="settings">
+        <ul class="settings-menu">
+          <li><a data-scroll href="#column-stretching-factor" data-sr="reset vFactor 0.2 wait 0.3s enter left move 20px over .5s">Column stretching factor</a></li>
+          <li><a data-scroll href="#children-alignment" data-sr="reset vFactor 0.2 wait 0.3s enter right move 20px over .5s">Children alignment</a></li>
+          <li><a data-scroll href="#individual-alignment" data-sr="reset vFactor 0.2 wait 0.3s enter left move 20px over .5s">Individual alignment</a></li>
+          <li><a data-scroll href="#gutters" data-sr="reset vFactor 0.2 wait 0.3s enter right move 20px over .5s">Gutters</a></li>
+        </ul>
+      </section>
+      <section class="section-main" id="column-stretching-factor">
+        <h1 class="h1-section">Column stretching factor</h1>
+        <pre><code>&lt;grid-element>
+  &lt;grid-col <span class="code-highlight">s="3"</span>>&lt;/grid-col>
+  &lt;grid-col>&lt;/grid-col>
+  &lt;grid-col>&lt;/grid-col>
+  &lt;grid-col>&lt;/grid-col>
+&lt;/grid-element></code></pre>
+        <grid-element ghi gho gvi gvo>
+          <grid-col s="3">
+            <flex-element x-center y-center>
+              <svg class="icon-feature icon-headline" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4 15h16v-2H4v2zm0 4h16v-2H4v2zm0-8h16V9H4v2zm0-6v2h16V5H4z"/>
+                  <path d="M0 0h24v24H0V0z" fill="none"/>
+              </svg>
+            </flex-element>
+            <flex-element x-center y-center>
+              <svg class="icon-feature" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"/>
+                  <path d="M0 0h24v24H0z" fill="none"/>
+              </svg>
+            </flex-element>
+          </grid-col>
+          <grid-col>
+            <flex-element x-center y-center>
+              <svg class="icon-feature" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"/>
+                  <path d="M0 0h24v24H0z" fill="none"/>
+              </svg>
+            </flex-element>
+          </grid-col>
+          <grid-col>
+            <flex-element x-center y-center>
+              <svg class="icon-feature" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"/>
+                  <path d="M0 0h24v24H0z" fill="none"/>
+              </svg>
+            </flex-element>
+          </grid-col>
+          <grid-col>
+            <flex-element x-center y-center>
+              <svg class="icon-feature" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"/>
+                  <path d="M0 0h24v24H0z" fill="none"/>
+              </svg>
+            </flex-element>
+          </grid-col>
+        </grid-element>
+      </section>
+      <section class="section-main" id="children-alignment">
+        <h1 class="h1-section">Children alignment</h1>
+        <h2 class="h2-section">Start</h2>
+        <pre><code>&lt;grid-element <span class="code-highlight">start</span>>
+  &lt;grid-col>&lt;/grid-col>
+  &lt;grid-col>&lt;/grid-col>
+  &lt;grid-col>&lt;/grid-col>
+  &lt;grid-col>&lt;/grid-col>
+&lt;/grid-element></code></pre>
+        <grid-element ghi gho gvi gvo start>
+          <grid-col>
+            <flex-element x-center y-center>
+              <svg class="icon-feature icon-headline" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4 15h16v-2H4v2zm0 4h16v-2H4v2zm0-8h16V9H4v2zm0-6v2h16V5H4z"/>
+                  <path d="M0 0h24v24H0V0z" fill="none"/>
+              </svg>
+            </flex-element>
+            <flex-element x-center y-center>
+              <svg class="icon-feature" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"/>
+                  <path d="M0 0h24v24H0z" fill="none"/>
+              </svg>
+            </flex-element>
+          </grid-col>
+          <grid-col>
+            <flex-element x-center y-center>
+              <svg class="icon-feature" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"/>
+                  <path d="M0 0h24v24H0z" fill="none"/>
+              </svg>
+            </flex-element>
+          </grid-col>
+          <grid-col>
+            <flex-element x-center y-center>
+              <svg class="icon-feature" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"/>
+                  <path d="M0 0h24v24H0z" fill="none"/>
+              </svg>
+            </flex-element>
+          </grid-col>
+          <grid-col>
+            <flex-element x-center y-center>
+              <svg class="icon-feature" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"/>
+                  <path d="M0 0h24v24H0z" fill="none"/>
+              </svg>
+            </flex-element>
+          </grid-col>
+        </grid-element>
+        <h2 class="h2-section">Center</h2>
+        <pre><code>&lt;grid-element <span class="code-highlight">center</span>>
+  &lt;grid-col>&lt;/grid-col>
+  &lt;grid-col>&lt;/grid-col>
+  &lt;grid-col>&lt;/grid-col>
+  &lt;grid-col>&lt;/grid-col>
+&lt;/grid-element></code></pre>
+        <grid-element ghi gho gvi gvo center>
+          <grid-col>
+            <flex-element x-center y-center>
+              <svg class="icon-feature icon-headline" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4 15h16v-2H4v2zm0 4h16v-2H4v2zm0-8h16V9H4v2zm0-6v2h16V5H4z"/>
+                  <path d="M0 0h24v24H0V0z" fill="none"/>
+              </svg>
+            </flex-element>
+            <flex-element x-center y-center>
+              <svg class="icon-feature" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"/>
+                  <path d="M0 0h24v24H0z" fill="none"/>
+              </svg>
+            </flex-element>
+          </grid-col>
+          <grid-col>
+            <flex-element x-center y-center>
+              <svg class="icon-feature" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"/>
+                  <path d="M0 0h24v24H0z" fill="none"/>
+              </svg>
+            </flex-element>
+          </grid-col>
+          <grid-col>
+            <flex-element x-center y-center>
+              <svg class="icon-feature" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"/>
+                  <path d="M0 0h24v24H0z" fill="none"/>
+              </svg>
+            </flex-element>
+          </grid-col>
+          <grid-col>
+            <flex-element x-center y-center>
+              <svg class="icon-feature" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"/>
+                  <path d="M0 0h24v24H0z" fill="none"/>
+              </svg>
+            </flex-element>
+          </grid-col>
+        </grid-element>
+        <h2 class="h2-section">End</h2>
+        <pre><code>&lt;grid-element <span class="code-highlight">end</span>>
+  &lt;grid-col>&lt;/grid-col>
+  &lt;grid-col>&lt;/grid-col>
+  &lt;grid-col>&lt;/grid-col>
+  &lt;grid-col>&lt;/grid-col>
+&lt;/grid-element></code></pre>
+        <grid-element ghi gho gvi gvo end>
+          <grid-col>
+            <flex-element x-center y-center>
+              <svg class="icon-feature icon-headline" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4 15h16v-2H4v2zm0 4h16v-2H4v2zm0-8h16V9H4v2zm0-6v2h16V5H4z"/>
+                  <path d="M0 0h24v24H0V0z" fill="none"/>
+              </svg>
+            </flex-element>
+            <flex-element x-center y-center>
+              <svg class="icon-feature" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"/>
+                  <path d="M0 0h24v24H0z" fill="none"/>
+              </svg>
+            </flex-element>
+          </grid-col>
+          <grid-col>
+            <flex-element x-center y-center>
+              <svg class="icon-feature" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"/>
+                  <path d="M0 0h24v24H0z" fill="none"/>
+              </svg>
+            </flex-element>
+          </grid-col>
+          <grid-col>
+            <flex-element x-center y-center>
+              <svg class="icon-feature" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"/>
+                  <path d="M0 0h24v24H0z" fill="none"/>
+              </svg>
+            </flex-element>
+          </grid-col>
+          <grid-col>
+            <flex-element x-center y-center>
+              <svg class="icon-feature" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"/>
+                  <path d="M0 0h24v24H0z" fill="none"/>
+              </svg>
+            </flex-element>
+          </grid-col>
+        </grid-element>
+      </section>
+      <section class="section-main">
+        <h1 class="h1-section" id="individual-alignment">Individual alignment</h1>
+        <pre><code>&lt;grid-element>
+  &lt;grid-col>&lt;/grid-col>
+  &lt;grid-col <span class="code-highlight">start</span>>&lt;/grid-col>
+  &lt;grid-col <span class="code-highlight">center</span>>&lt;/grid-col>
+  &lt;grid-col <span class="code-highlight">end</span>>&lt;/grid-col>
+  &lt;grid-col <span class="code-highlight">stretch</span>>&lt;/grid-col>
+&lt;/grid-element></code></pre>
+        <grid-element ghi gho gvi gvo>
+          <grid-col>
+            <flex-element x-center y-center>
+              <svg class="icon-feature icon-headline" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4 15h16v-2H4v2zm0 4h16v-2H4v2zm0-8h16V9H4v2zm0-6v2h16V5H4z"/>
+                  <path d="M0 0h24v24H0V0z" fill="none"/>
+              </svg>
+            </flex-element>
+            <flex-element x-center y-center>
+              <svg class="icon-feature" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"/>
+                  <path d="M0 0h24v24H0z" fill="none"/>
+              </svg>
+            </flex-element>
+          </grid-col>
+          <grid-col start>
+            <flex-element x-center y-center>
+              <svg class="icon-feature" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"/>
+                  <path d="M0 0h24v24H0z" fill="none"/>
+              </svg>
+            </flex-element>
+          </grid-col>
+          <grid-col center>
+            <flex-element x-center y-center>
+              <svg class="icon-feature" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"/>
+                  <path d="M0 0h24v24H0z" fill="none"/>
+              </svg>
+            </flex-element>
+          </grid-col>
+          <grid-col end>
+            <flex-element x-center y-center>
+              <svg class="icon-feature" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"/>
+                  <path d="M0 0h24v24H0z" fill="none"/>
+              </svg>
+            </flex-element>
+          </grid-col>
+          <grid-col stretch>
+            <flex-element x-center y-center>
+              <svg class="icon-feature" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"/>
+                  <path d="M0 0h24v24H0z" fill="none"/>
+              </svg>
+            </flex-element>
+          </grid-col>
+        </grid-element>
+      </section>
+      <section class="section-main" id="gutters">
+        <h1 class="h1-section">Gutters</h1>
+        <h2 class="h2-section">ghi: inner horizontal gutters</h2>
+        <pre><code>&lt;grid-element <span class="code-highlight">ghi</span>>
+  &lt;grid-col>&lt;/grid-col>
+  &lt;grid-col>&lt;/grid-col>
+  &lt;grid-col>&lt;/grid-col>
+&lt;/grid-element></code></pre>
+        <grid-element class="grid-element-docs" ghi>
+          <grid-col>
+            <flex-element x-center y-center>
+              <svg class="icon-feature" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"/>
+                  <path d="M0 0h24v24H0z" fill="none"/>
+              </svg>
+            </flex-element>
+          </grid-col>
+          <grid-col>
+            <flex-element x-center y-center>
+              <svg class="icon-feature" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"/>
+                  <path d="M0 0h24v24H0z" fill="none"/>
+              </svg>
+            </flex-element>
+          </grid-col>
+          <grid-col>
+            <flex-element x-center y-center>
+              <svg class="icon-feature" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"/>
+                  <path d="M0 0h24v24H0z" fill="none"/>
+              </svg>
+            </flex-element>
+          </grid-col>
+        </grid-element>
+        <h2 class="h2-section">gho: outer horizontal gutters</h2>
+        <pre><code>&lt;grid-element <span class="code-highlight">ghi gho</span>>
+  &lt;grid-col>&lt;/grid-col>
+  &lt;grid-col>&lt;/grid-col>
+  &lt;grid-col>&lt;/grid-col>
+&lt;/grid-element></code></pre>
+        <grid-element class="grid-element-docs" ghi gho>
+          <grid-col>
+            <flex-element x-center y-center>
+              <svg class="icon-feature" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"/>
+                  <path d="M0 0h24v24H0z" fill="none"/>
+              </svg>
+            </flex-element>
+          </grid-col>
+          <grid-col>
+            <flex-element x-center y-center>
+              <svg class="icon-feature" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"/>
+                  <path d="M0 0h24v24H0z" fill="none"/>
+              </svg>
+            </flex-element>
+          </grid-col>
+          <grid-col>
+            <flex-element x-center y-center>
+              <svg class="icon-feature" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"/>
+                  <path d="M0 0h24v24H0z" fill="none"/>
+              </svg>
+            </flex-element>
+          </grid-col>
+        </grid-element>
+        <h2 class="h2-section">gvi: inner vertical gutters</h2>
+        <pre><code>&lt;grid-element <span class="code-highlight">ghi gho gvi</span>>
+  &lt;grid-col>&lt;/grid-col>
+  &lt;grid-col>&lt;/grid-col>
+  &lt;grid-col>&lt;/grid-col>
+&lt;/grid-element></code></pre>
+        <grid-element class="grid-element-docs" ghi gho gvi>
+          <grid-col>
+            <flex-element x-center y-center>
+              <svg class="icon-feature" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"/>
+                  <path d="M0 0h24v24H0z" fill="none"/>
+              </svg>
+            </flex-element>
+          </grid-col>
+          <grid-col>
+            <flex-element x-center y-center>
+              <svg class="icon-feature" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"/>
+                  <path d="M0 0h24v24H0z" fill="none"/>
+              </svg>
+            </flex-element>
+          </grid-col>
+          <grid-col>
+            <flex-element x-center y-center>
+              <svg class="icon-feature" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"/>
+                  <path d="M0 0h24v24H0z" fill="none"/>
+              </svg>
+            </flex-element>
+          </grid-col>
+        </grid-element>
+        <h2 class="h2-section">gvo: outer vertical gutters</h2>
+        <pre><code>&lt;grid-element <span class="code-highlight">ghi gho gvi gvo</span>>
+  &lt;grid-col>&lt;/grid-col>
+  &lt;grid-col>&lt;/grid-col>
+  &lt;grid-col>&lt;/grid-col>
+&lt;/grid-element></code></pre>
+        <grid-element class="grid-element-docs" ghi gho gvi gvo>
+          <grid-col>
+            <flex-element x-center y-center>
+              <svg class="icon-feature" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"/>
+                  <path d="M0 0h24v24H0z" fill="none"/>
+              </svg>
+            </flex-element>
+          </grid-col>
+          <grid-col>
+            <flex-element x-center y-center>
+              <svg class="icon-feature" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"/>
+                  <path d="M0 0h24v24H0z" fill="none"/>
+              </svg>
+            </flex-element>
+          </grid-col>
+          <grid-col>
+            <flex-element x-center y-center>
+              <svg class="icon-feature" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"/>
+                  <path d="M0 0h24v24H0z" fill="none"/>
+              </svg>
+            </flex-element>
+          </grid-col>
+        </grid-element>
+        <h2 class="h2-section">gs: gutter size</h2>
+        <pre><code>&lt;grid-element <span class="code-highlight">ghi gho gvi gvo gs="25px"</span>>
+  &lt;grid-col>&lt;/grid-col>
+  &lt;grid-col>&lt;/grid-col>
+  &lt;grid-col>&lt;/grid-col>
+&lt;/grid-element></code></pre>
+        <grid-element class="grid-element-docs" ghi gho gvi gvo gs="25px">
+          <grid-col>
+            <flex-element x-center y-center>
+              <svg class="icon-feature" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"/>
+                  <path d="M0 0h24v24H0z" fill="none"/>
+              </svg>
+            </flex-element>
+          </grid-col>
+          <grid-col>
+            <flex-element x-center y-center>
+              <svg class="icon-feature" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"/>
+                  <path d="M0 0h24v24H0z" fill="none"/>
+              </svg>
+            </flex-element>
+          </grid-col>
+          <grid-col>
+            <flex-element x-center y-center>
+              <svg class="icon-feature" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"/>
+                  <path d="M0 0h24v24H0z" fill="none"/>
+              </svg>
+            </flex-element>
+          </grid-col>
+        </grid-element>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="copyright-notice">
+        <span class="copyright-symbol">&copy;</span> 2015 Charbel Rami. All rights reserved.
+      </div>
+      <div>Source code licensed under <a href="https://raw.githubusercontent.com/charbelrami/grid-element/master/license.txt">the MIT License</a>.</div>
+    </footer>
+
+
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/headroom.js/dist/headroom.min.js"></script>
+    <script src="bower_components/headroom.js/dist/jQuery.headroom.js"></script>
+    <script src="bower_components/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
+    <script src="bower_components/scrollReveal.js/dist/scrollReveal.min.js"></script>
+    <script>
+      $("#headroom").headroom({
+        "offset": 75,
+        "tolerance": 5,
+        "classes": {
+          "initial": "headroom",
+          "pinned": "headroom--pinned",
+          "unpinned": "headroom--unpinned"
+        }
+      });
+
+      smoothScroll.init({
+        speed: 1000,
+        easing: 'easeInOutCubic',
+        updateURL: true,
+        offset: 0,
+        callbackBefore: function ( toggle, anchor ) {},
+        callbackAfter: function ( toggle, anchor ) {}
+      });
+
+      var config = { mobile: true };
+      window.sr = new scrollReveal(config);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<!--
+@license
+Copyright (c) 2015 Charbel Rami. All rights reserved.
+MIT
+-->
+<dom-module id="grid-col">
+  <template>
+    <style>
+      @media (min-width: 48em) {
+        :host {
+          -webkit-flex-basis: 0;
+          -ms-flex-preferred-size: 0;
+          flex-basis: 0;
+          -webkit-flex-shrink: 0;
+          -ms-flex-negative: 0;
+          flex-shrink: 0;
+        }
+        :host([center]) {
+          -webkit-align-self: center;
+          -ms-flex-item-align: center;
+          align-self: center;
+        }
+        :host([start]) {
+          -webkit-align-self: flex-start;
+          -ms-flex-item-align: start;
+          align-self: flex-start;
+        }
+        :host([end]) {
+          -webkit-align-self: flex-end;
+          -ms-flex-item-align: end;
+          align-self: flex-end;
+        }
+        :host([stretch]) {
+          -webkit-align-self: stretch;
+          -ms-flex-item-align: stretch;
+          align-self: stretch;
+        }
+      }
+    </style>
+    <content></content>
+  </template>
+  <script>
+    Polymer({
+      is: 'grid-col',
+      properties: {
+        /**
+         * column stretching factor
+         *
+         * @default '1'
+         */
+        s: {
+          type: Number,
+          value: 1
+        }
+      },
+      ready: function() {
+        this.style.flexGrow = this.s;
+      }
+    });
+  </script>
+</dom-module>

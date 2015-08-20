@@ -1,0 +1,85 @@
+<!--
+@license
+Copyright (c) 2015 Charbel Rami. All rights reserved.
+MIT
+-->
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="grid-col.html">
+<dom-module id="grid-element">
+  <template>
+    <style>
+      :host {
+        --grid-gutter: 10px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+      }
+      :host([gho]) {
+        padding-left: var(--grid-gutter, 10px);
+        padding-right: var(--grid-gutter, 10px);
+      }
+      :host([gvo]) {
+        padding-top: var(--grid-gutter, 10px);
+        padding-bottom: var(--grid-gutter, 10px);
+      }
+      @media (min-width: 48em) {
+        :host {
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
+        :host([center]) {
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+          -ms-flex-align: center;
+          align-items: center;
+        }
+        :host([start]) {
+          -webkit-box-align: start;
+          -webkit-align-items: flex-start;
+          -ms-flex-align: start;
+          align-items: flex-start;
+        }
+        :host([end]) {
+          -webkit-box-align: end;
+          -webkit-align-items: flex-end;
+          -ms-flex-align: end;
+          align-items: flex-end;
+        }
+        :host([ghi]) > ::content > grid-col:not(:first-child) {
+          margin-left: var(--grid-gutter, 10px);
+        }
+      }
+      @media (max-width: 48em) {
+        :host([gvi]) > ::content > grid-col:not(:first-child) {
+          margin-top: var(--grid-gutter, 10px);
+        }
+      }
+    </style>
+    <content></content>
+  </template>
+  <script>
+    Polymer({
+      is: 'grid-element',
+      properties: {
+        /** gutter size */
+        gs: {
+          type: String
+        }
+      },
+      ready: function() {
+        this.customStyle['--grid-gutter'] = this.gs;
+        this.updateStyles();
+      }
+    });
+  </script>
+</dom-module>
