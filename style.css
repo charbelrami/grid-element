@@ -583,9 +583,6 @@ pre {
   padding: 20px 40px;
   color: #169c84;
   border: 1px solid #5f5d68;
-  -webkit-align-self: stretch;
-      -ms-flex-item-align: stretch;
-          align-self: stretch;
 }
 .code-highlight {
   color: #d04f4b;
@@ -633,10 +630,10 @@ pre {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
@@ -647,6 +644,9 @@ pre {
   padding-bottom: 75px;
 }
 .settings-menu {
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
