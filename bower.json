@@ -1,19 +1,10 @@
 {
   "name": "grid-element",
-  "version": "0.1.0",
   "homepage": "https://github.com/charbelrami/grid-element",
   "authors": [
     "Charbel Rami"
   ],
-  "description": "Responsive grid element using Polymer and Flexbox",
-  "main": "grid-element.html",
-  "keywords": [
-    "grid",
-    "flexbox",
-    "polymer",
-    "web-component",
-    "web-components"
-  ],
+  "main": "index.html",
   "license": "MIT",
   "ignore": [
     "**/.*",
@@ -23,6 +14,11 @@
     "tests"
   ],
   "dependencies": {
-    "polymer": "Polymer/polymer#~1.1.0"
+    "flex-element": "~0.1.0",
+    "headroom.js": "~0.7.0",
+    "octicons": "~3.1.0",
+    "jquery": "~2.1.4",
+    "scrollReveal.js": "~2.3.2",
+    "smooth-scroll": "https://github.com/cferdinandi/smooth-scroll.git#~7.0.2"
   }
 }

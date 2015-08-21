@@ -1,6 +1,6 @@
 {
   "name": "grid-element",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "homepage": "https://github.com/charbelrami/grid-element",
   "authors": [
     "Charbel Rami"
@@ -25,11 +25,11 @@
   "dependencies": {
     "polymer": "Polymer/polymer#~1.1.0"
   },
-  "_release": "0.1.1",
+  "_release": "0.1.2",
   "_resolution": {
     "type": "version",
-    "tag": "v0.1.1",
-    "commit": "bbc11ec7048227c9a4206857d34ada29d1f20b1d"
+    "tag": "v0.1.2",
+    "commit": "e5da7a57f099a924936e37e425717900bb719b8b"
   },
   "_source": "git://github.com/charbelrami/grid-element.git",
   "_target": "~0.1.0",
