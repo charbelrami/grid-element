@@ -584,6 +584,9 @@ pre {
   color: #169c84;
   border: 1px solid #5f5d68;
 }
+code {
+  font-family: 'Fira Mono', monospace;
+}
 .code-highlight {
   color: #d04f4b;
 }
@@ -681,10 +684,12 @@ pre {
 }
 .copyright-notice {
   color: #fff;
+  margin-bottom: 10px;
 }
 .copyright-symbol {
   font-size: 2em;
   vertical-align: middle;
+  line-height: 0;
 }
 .headroom {
   -webkit-animation-duration: 0.5s;

@@ -168,6 +168,10 @@ pre {
   border: 1px solid lighten(@base-color, 20);
 }
 
+code {
+  font-family: 'Fira Mono', monospace;
+}
+
 .code-highlight {
   color: @code-highlight;
 }
@@ -237,11 +241,13 @@ pre {
 
 .copyright-notice {
   color: #fff;
+  margin-bottom: @spacing;
 }
 
 .copyright-symbol {
   font-size: 2em;
   vertical-align: middle;
+  line-height: 0;
 }
 
 .headroom {
