@@ -586,6 +586,7 @@ pre {
 }
 code {
   font-family: 'Fira Mono', monospace;
+  font-size: .875rem;
 }
 .code-highlight {
   color: #d04f4b;
