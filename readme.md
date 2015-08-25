@@ -83,63 +83,92 @@ $ polyserve
 ```
 #### CSS Custom Properties
 
-- `--grid-gutter`: gutter size [default value: `10px`]
 ```css
---grid-gutter: 15px;
+/* gutter size, default value: 10px */
+--grid-gutter
+/* inner horizontal gutter size, default value: --grid-gutter */
+--grid-gutter-hi
+/* outer horizontal gutter size, default value: --grid-gutter */
+--grid-gutter-ho
+/* inner vertical gutter size, default value: --grid-gutter */
+--grid-gutter-vi
+/* outer vertical gutter size, default value: --grid-gutter */
+--grid-gutter-vo
 ```
 
 #### Attributes
 
 ##### Gutters
 
-###### `gs`: gutter size [type: `String`, initial value: `--grid-gutter` value]
+- `gs`: gutter size
+
+type | initial value
+--- | ---
+`String` |`--grid-gutter` value
 
 ```html
 <grid-element gs="15px"></grid-element>
 ```
 
-###### `ghi`: inner horizontal gutters
+- `ghi`: inner horizontal gutters
 
 ```html
 <grid-element ghi></grid-element>
 ```
 
-Inner horizontal gutter size [type: `String`, initial value: `--grid-gutter-hi` value]
+Inner horizontal gutter size
+
+type | initial value
+--- | ---
+`String` |`--grid-gutter-hi` value
 
 ```html
 <grid-element ghi="15px"></grid-element>
 ```
 
-###### `gho`: outer horizontal gutters
+- `gho`: outer horizontal gutters
 
 ```html
 <grid-element gho></grid-element>
 ```
 
-Outer horizontal gutter size [type: `String`, initial value: `--grid-gutter-ho` value]
+Outer horizontal gutter size
+
+type | initial value
+--- | ---
+`String` |`--grid-gutter-ho` value
 
 ```html
 <grid-element gho="15px"></grid-element>
 ```
 
-###### `gvi`: inner vertical gutters
+- `gvi`: inner vertical gutters
 
 ```html
 <grid-element gvi></grid-element>
 ```
 
-Inner vertical gutter size [type: `String`, initial value: `--grid-gutter-vi` value]
+Inner vertical gutter size
+
+type | initial value
+--- | ---
+`String` |`--grid-gutter-vi` value
 
 ```html
 <grid-element gvi="15px"></grid-element>
 ```
-###### `gvo`: outer vertical gutters
+- `gvo`: outer vertical gutters
 
 ```html
 <grid-element gvo></grid-element>
 ```
 
-Outer vertical gutter size [type: `String`, initial value: `--grid-gutter-vo` value]
+Outer vertical gutter size
+
+type | initial value
+--- | ---
+`String` |`--grid-gutter-vo` value
+
 
 ```html
 <grid-element gvo="15px"></grid-element>
@@ -170,7 +199,13 @@ Outer vertical gutter size [type: `String`, initial value: `--grid-gutter-vo` va
 
 ##### Column sizing
 
-- `s`: column stretching factor [type: `Number` - default value: `1`]
+- `s`: column stretching factor
+
+type | initial value
+--- | ---
+`Number` | `1`
+
+
 ```html
 <grid-col s="3"></grid-col>
 ```
