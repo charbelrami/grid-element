@@ -21,12 +21,12 @@ MIT
         flex-direction: column;
       }
       :host([gho]) {
-        padding-left: var(--grid-gutter, 10px);
-        padding-right: var(--grid-gutter, 10px);
+        padding-left: var(--grid-gutter-ho, --grid-gutter);
+        padding-right: var(--grid-gutter-ho, --grid-gutter);
       }
       :host([gvo]) {
-        padding-top: var(--grid-gutter, 10px);
-        padding-bottom: var(--grid-gutter, 10px);
+        padding-top: var(--grid-gutter-vo, --grid-gutter);
+        padding-bottom: var(--grid-gutter-vo, --grid-gutter);
       }
       @media (min-width: 48em) {
         :host {
@@ -58,12 +58,12 @@ MIT
           align-items: flex-end;
         }
         :host([ghi]) > ::content > grid-col:not(:first-child) {
-          margin-left: var(--grid-gutter, 10px);
+          margin-left: var(--grid-gutter-hi, --grid-gutter);
         }
       }
       @media (max-width: 48em) {
         :host([gvi]) > ::content > grid-col:not(:first-child) {
-          margin-top: var(--grid-gutter, 10px);
+          margin-top: var(--grid-gutter-vi, --grid-gutter);
         }
       }
     </style>
@@ -76,10 +76,30 @@ MIT
         /** gutter size */
         gs: {
           type: String
+        },
+        /** outside horizontal gutter size */
+        gho: {
+          type: String
+        },
+        /** outside vertical gutter size */
+        gvo: {
+          type: String
+        },
+        /** inside horizontal gutter size */
+        ghi: {
+          type: String
+        },
+        /** inside vertical gutter size */
+        gvi: {
+          type: String
         }
       },
       ready: function() {
         this.customStyle['--grid-gutter'] = this.gs;
+        this.customStyle['--grid-gutter-ho'] = this.gho;
+        this.customStyle['--grid-gutter-vo'] = this.gvo;
+        this.customStyle['--grid-gutter-hi'] = this.ghi;
+        this.customStyle['--grid-gutter-vi'] = this.gvi;
         this.updateStyles();
       }
     });
