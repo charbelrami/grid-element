@@ -21,8 +21,8 @@ MIT
         flex-direction: column;
       }
       :host([gho]) {
-        padding-left: var(--grid-gutter, 10px);
-        padding-right: var(--grid-gutter, 10px);
+        padding-left: var(--grid-gutter-outside, --grid-gutter);
+        padding-right: var(--grid-gutter-outside, --grid-gutter);
       }
       :host([gvo]) {
         padding-top: var(--grid-gutter, 10px);
@@ -76,10 +76,19 @@ MIT
         /** gutter size */
         gs: {
           type: String
+        },
+        /** outside gutter size */
+        gho: {
+          type: String
+        },
+        /** inside gutter size */
+        ghi: {
+          type: String
         }
       },
       ready: function() {
-        this.customStyle['--grid-gutter'] = this.gs;
+        this.customStyle['--grid-gutter'] = this.ghi || this.gs;
+        this.customStyle['--grid-gutter-outside'] = this.gho;
         this.updateStyles();
       }
     });
