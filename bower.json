@@ -15,9 +15,10 @@
   ],
   "dependencies": {
     "flex-element": "~0.1.0",
+    "grid-element": "~0.2.0",
     "headroom.js": "~0.7.0",
-    "octicons": "~3.1.0",
     "jquery": "~2.1.4",
+    "octicons": "~3.1.0",
     "scrollReveal.js": "~2.3.2",
     "smooth-scroll": "https://github.com/cferdinandi/smooth-scroll.git#~7.0.2"
   }
