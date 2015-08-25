@@ -100,18 +100,34 @@ $ polyserve
 ```html
 <grid-element ghi></grid-element>
 ```
+  - inner horizontal gutter size [type: `String`, initial value: `--grid-gutter-hi` value]
+  ```html
+  <grid-element ghi="15px"></grid-element>
+  ```
 - `gho`: outer horizontal gutters
 ```html
 <grid-element gho></grid-element>
 ```
+  - outer horizontal gutter size [type: `String`, initial value: `--grid-gutter-ho` value]
+  ```html
+  <grid-element gho="15px"></grid-element>
+  ```
 - `gvi`: inner vertical gutters
 ```html
 <grid-element gvi></grid-element>
 ```
+  - inner vertical gutter size [type: `String`, initial value: `--grid-gutter-vi` value]
+  ```html
+  <grid-element gvi="15px"></grid-element>
+  ```
 - `gvo`: outer vertical gutters
 ```html
 <grid-element gvo></grid-element>
 ```
+  - outer vertical gutter size [type: `String`, initial value: `--grid-gutter-vo` value]
+  ```html
+  <grid-element gvo="15px"></grid-element>
+  ```
 
 ##### Children alignment
 
