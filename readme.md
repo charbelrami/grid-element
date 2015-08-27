@@ -1,5 +1,7 @@
 # Grid Element
 
+![Grid Element logo](https://cdn.rawgit.com/charbelrami/grid-element/master/grid-element-logo.svg)
+
 ## Contents
 
 - [Introduction](#introduction)
@@ -22,8 +24,6 @@
 - [Browser support](#browser-support)
 - [Contributing](#contributing)
 - [License](#license)
-
-![Grid Element logo](grid-element-logo.svg)
 
 ## Introduction
 
