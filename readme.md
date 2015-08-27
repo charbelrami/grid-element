@@ -23,6 +23,8 @@
 - [Contributing](#contributing)
 - [License](#license)
 
+![Grid Element logo](grid-element-logo.svg)
+
 ## Introduction
 
 Responsive grid element using Polymer and Flexbox
