@@ -23,6 +23,7 @@
       - [Individual alignment](#individual-alignment)
 - [Browser support](#browser-support)
 - [Contributing](#contributing)
+- [Related](#related)
 - [License](#license)
 
 ## Introduction
@@ -239,6 +240,10 @@ type | initial value
 ## Contributing
 
 [Contributing](contributing.md)
+
+## Related
+
+[Flex Element](https://github.com/charbelrami/flex-element)
 
 ## License
 
