@@ -1,0 +1,25 @@
+{
+  "name": "style-element",
+  "version": "0.2.0",
+  "homepage": "https://github.com/charbelrami/style-element",
+  "authors": [
+    "Charbel Rami"
+  ],
+  "description": "Shared styles element",
+  "main": "style-element.html",
+  "keywords": [
+    "style",
+    "styles",
+    "polymer",
+    "web-component",
+    "web-components"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

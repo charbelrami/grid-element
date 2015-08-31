@@ -1,0 +1,23 @@
+{
+  "name": "style-element",
+  "version": "0.2.0",
+  "description": "Shared styles element",
+  "main": "style-element.html",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charbelrami/style-element.git"
+  },
+  "keywords": [
+    "style",
+    "styles",
+    "polymer",
+    "web-component",
+    "web-components"
+  ],
+  "author": "Charbel Rami",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/charbelrami/style-element/issues"
+  },
+  "homepage": "https://github.com/charbelrami/style-element#readme"
+}

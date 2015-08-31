@@ -1,6 +1,6 @@
 {
   "name": "grid-element",
-  "version": "0.2.0",
+  "version": "0.2.3",
   "homepage": "https://github.com/charbelrami/grid-element",
   "authors": [
     "Charbel Rami"
@@ -23,6 +23,7 @@
     "tests"
   ],
   "dependencies": {
-    "polymer": "Polymer/polymer#~1.1.0"
+    "polymer": "Polymer/polymer#1",
+    "style-element": ""
   }
 }
