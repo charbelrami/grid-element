@@ -15,6 +15,7 @@
   - [grid-element](#grid-element-1)
     - [CSS Custom Properties](#css-custom-properties)
     - [Attributes](#attributes)
+      - [Custom media query](#custom-media-query)
       - [Gutters](#gutters)
       - [Children alignment](#children-alignment)
   - [grid-col](#grid-col)
@@ -100,6 +101,18 @@ $ polyserve
 ```
 
 #### Attributes
+
+##### Custom media query
+
+- `mq`: media query
+
+type | initial value
+--- | ---
+`String` |`(min-width: 48em)`
+
+```html
+<grid-element mq="(min-width: 20em)"></grid-element>
+```
 
 ##### Gutters
 
