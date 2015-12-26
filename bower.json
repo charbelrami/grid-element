@@ -15,11 +15,13 @@
   ],
   "dependencies": {
     "flex-element": "",
-    "grid-element": "",
     "headroom.js": "~0.7.0",
     "jquery": "~2.1.4",
-    "octicons": "~3.1.0",
-    "scrollReveal.js": "~2.3.2",
-    "smooth-scroll": "https://github.com/cferdinandi/smooth-scroll.git#~7.0.2"
+    "octicons": "~3.3.0",
+    "smooth-scroll": "https://github.com/cferdinandi/smooth-scroll.git#~7.0.2",
+    "scrollreveal": "~3.0.3",
+    "grid-element": "~0.3.0",
+    "polymer": "~1.2.3",
+    "iron-media-query": "PolymerElements/iron-media-query#~1.0.8"
   }
 }

@@ -1,6 +1,5 @@
 {
   "name": "grid-element",
-  "version": "0.2.3",
   "homepage": "https://github.com/charbelrami/grid-element",
   "authors": [
     "Charbel Rami"
@@ -24,15 +23,18 @@
   ],
   "dependencies": {
     "polymer": "Polymer/polymer#1",
-    "style-element": ""
+    "style-element": "",
+    "iron-media-query": "PolymerElements/iron-media-query#1"
   },
-  "_release": "0.2.3",
+  "version": "0.3.0",
+  "_release": "0.3.0",
   "_resolution": {
     "type": "version",
-    "tag": "v0.2.3",
-    "commit": "07d3941ef2b44d10ab02eb47dda14643c9e0cf96"
+    "tag": "v0.3.0",
+    "commit": "2715a08ebd1e5f39cdda5fc8fb6c310abe906c01"
   },
   "_source": "git://github.com/charbelrami/grid-element.git",
-  "_target": "*",
-  "_originalSource": "grid-element"
+  "_target": "~0.3.0",
+  "_originalSource": "grid-element",
+  "_direct": true
 }

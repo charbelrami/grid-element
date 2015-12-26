@@ -136,11 +136,61 @@
       </section>
       <section class="section-main" id="settings">
         <ul class="settings-menu">
-          <li><a data-scroll href="#column-stretching-factor" data-sr="reset vFactor 0.2 wait 0.3s enter left move 20px over .5s">Column stretching factor</a></li>
-          <li><a data-scroll href="#children-alignment" data-sr="reset vFactor 0.2 wait 0.3s enter right move 20px over .5s">Children alignment</a></li>
-          <li><a data-scroll href="#individual-alignment" data-sr="reset vFactor 0.2 wait 0.3s enter left move 20px over .5s">Individual alignment</a></li>
-          <li><a data-scroll href="#gutters" data-sr="reset vFactor 0.2 wait 0.3s enter right move 20px over .5s">Gutters</a></li>
+          <li><a data-scroll href="#custom-media-query" class="sr-right">Custom media query</a></li>
+          <li><a data-scroll href="#column-stretching-factor" class="sr-left">Column stretching factor</a></li>
+          <li><a data-scroll href="#children-alignment" class="sr-right">Children alignment</a></li>
+          <li><a data-scroll href="#individual-alignment" class="sr-left">Individual alignment</a></li>
+          <li><a data-scroll href="#gutters" class="sr-right">Gutters</a></li>
         </ul>
+      </section>
+      <section class="section-main" id="custom-media-query">
+        <h1 class="h1-section">Custom media query</h1>
+        <pre><code>&lt;grid-element <span class="code-highlight">mq="(min-width: 600px)"</span>>
+  &lt;grid-col>&lt;/grid-col>
+  &lt;grid-col>&lt;/grid-col>
+  &lt;grid-col>&lt;/grid-col>
+  &lt;grid-col>&lt;/grid-col>
+&lt;/grid-element></code></pre>
+        <grid-element ghi gho gvi gvo mq="(min-width: 600px)">
+          <grid-col>
+            <flex-element x-center y-center>
+              <svg class="icon-feature icon-headline" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4 15h16v-2H4v2zm0 4h16v-2H4v2zm0-8h16V9H4v2zm0-6v2h16V5H4z"/>
+                  <path d="M0 0h24v24H0V0z" fill="none"/>
+              </svg>
+            </flex-element>
+            <flex-element x-center y-center>
+              <svg class="icon-feature" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"/>
+                  <path d="M0 0h24v24H0z" fill="none"/>
+              </svg>
+            </flex-element>
+          </grid-col>
+          <grid-col>
+            <flex-element x-center y-center>
+              <svg class="icon-feature" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"/>
+                  <path d="M0 0h24v24H0z" fill="none"/>
+              </svg>
+            </flex-element>
+          </grid-col>
+          <grid-col>
+            <flex-element x-center y-center>
+              <svg class="icon-feature" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"/>
+                  <path d="M0 0h24v24H0z" fill="none"/>
+              </svg>
+            </flex-element>
+          </grid-col>
+          <grid-col>
+            <flex-element x-center y-center>
+              <svg class="icon-feature" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"/>
+                  <path d="M0 0h24v24H0z" fill="none"/>
+              </svg>
+            </flex-element>
+          </grid-col>
+        </grid-element>
       </section>
       <section class="section-main" id="column-stretching-factor">
         <h1 class="h1-section">Column stretching factor</h1>
@@ -604,7 +654,7 @@
     <script src="bower_components/headroom.js/dist/headroom.min.js"></script>
     <script src="bower_components/headroom.js/dist/jQuery.headroom.js"></script>
     <script src="bower_components/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
-    <script src="bower_components/scrollReveal.js/dist/scrollReveal.min.js"></script>
+    <script src="bower_components/scrollreveal/dist/scrollreveal.min.js"></script>
     <script>
       $("#headroom").headroom({
         "offset": 75,
@@ -625,8 +675,9 @@
         callbackAfter: function ( toggle, anchor ) {}
       });
 
-      var config = { mobile: true };
-      window.sr = new scrollReveal(config);
+      window.sr = ScrollReveal()
+        .reveal('.sr-left', {reset: true, viewFactor: 0.2, origin: 'left', distance: '20px', duration: '500'})
+        .reveal('.sr-right', {reset: true, viewFactor: 0.2, origin: 'right', distance: '20px', duration: '500'});
     </script>
   </body>
 </html>
