@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Grid Element</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="../webcomponentsjs/webcomponents-lite.min.js" async></script>
+    <link rel="import" href="grid-element.html">
+    <style>
+      grid-element {
+        background-color: #e0e0e0;
+      }
+      grid-col {
+        background-color: #f0f0f0;
+        min-height: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <grid-element ga="20px" mq="(min-width: 24em)">
+      <grid-col></grid-col>
+      <grid-col></grid-col>
+      <grid-col></grid-col>
+      <grid-col></grid-col>
+    </grid-element>
+  </body>
+</html>

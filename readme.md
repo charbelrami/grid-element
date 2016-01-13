@@ -190,6 +190,30 @@ type | initial value
 <grid-element gvo="15px"></grid-element>
 ```
 
+- `ga`: all gutters
+
+```html
+<grid-element ga></grid-element>
+```
+
+Equivalent to
+
+```html
+<grid-element gho gvo ghi gvi></grid-element>
+```
+
+All gutters size
+
+```html
+<grid-element ga="15px"></grid-element>
+```
+
+Equivalent to
+
+```html
+<grid-element gho gvo ghi gvi gs="15px"></grid-element>
+```
+
 ##### Children alignment
 
 - `center`
