@@ -79,26 +79,21 @@ MIT
     Polymer({
       is: 'grid-element',
       properties: {
+        /** all gutters. Equivalent to `gho gvo ghi gvi`*/
+        ga: {
+          type: String,
+          observer: '_allGutters'
+        },
         /** gutter size */
-        gs: {
-          type: String
-        },
+        gs: String,
         /** outer horizontal gutter size */
-        gho: {
-          type: String
-        },
+        gho: String,
         /** outer vertical gutter size */
-        gvo: {
-          type: String
-        },
+        gvo: String,
         /** inner horizontal gutter size */
-        ghi: {
-          type: String
-        },
+        ghi: String,
         /** inner vertical gutter size */
-        gvi: {
-          type: String
-        },
+        gvi: String,
         /** media query boolean */
         match: {
           type: Boolean,
@@ -130,6 +125,13 @@ MIT
       },
       _isMatch: function() {
         this.match ? this.fire('mq-match', {match: true}) : this.fire('mq-match', {match: false});
+      },
+      _allGutters: function() {
+        this.toggleAttribute('gho');
+        this.toggleAttribute('gvo');
+        this.toggleAttribute('ghi');
+        this.toggleAttribute('gvi');
+        this.gs = this.ga;
       }
     });
   </script>
