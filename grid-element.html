@@ -4,7 +4,6 @@ Copyright (c) 2015 Charbel Rami. All rights reserved.
 MIT
 -->
 <link rel="import" href="../polymer/polymer.html">
-<link rel="import" href="../style-element/style-element.html">
 <link rel="import" href="../iron-media-query/iron-media-query.html">
 <link rel="import" href="grid-col.html">
 <dom-module id="grid-element">
@@ -12,6 +11,7 @@ MIT
     <style include="style-element"></style>
     <style>
       :host {
+        --grid-gutter: 10px;
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;

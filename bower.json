@@ -23,7 +23,6 @@
   ],
   "dependencies": {
     "polymer": "Polymer/polymer#1",
-    "style-element": "",
     "iron-media-query": "PolymerElements/iron-media-query#1"
   }
 }
