@@ -3,6 +3,13 @@
   "version": "0.4.1",
   "description": "Responsive grid element using Polymer and Flexbox",
   "main": "grid-element.html",
+  "scripts": {
+    "serve": "polyserve",
+    "lint": "polylint grid-element.html grid-col.html",
+    "preversion": "npm run lint",
+    "version": "git add -A .",
+    "postversion": "git push --follow-tags && npm publish"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/charbelrami/grid-element.git"
@@ -19,5 +26,9 @@
   "bugs": {
     "url": "https://github.com/charbelrami/grid-element/issues"
   },
-  "homepage": "https://github.com/charbelrami/grid-element#readme"
+  "homepage": "https://github.com/charbelrami/grid-element#readme",
+  "devDependencies": {
+    "polylint": "^2.10.0",
+    "polyserve": "^0.7.1"
+  }
 }
