@@ -1,7 +1,7 @@
 {
   "name": "grid-element",
   "version": "0.4.3",
-  "description": "Responsive grid element using Polymer and Flexbox",
+  "description": "Responsive grid custom element using Polymer and Flexbox",
   "main": "grid-element.html",
   "scripts": {
     "serve": "polymer serve -o",
