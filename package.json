@@ -1,6 +1,6 @@
 {
   "name": "grid-element",
-  "version": "0.4.3",
+  "version": "0.4.4",
   "description": "Responsive grid custom element using Polymer and Flexbox",
   "main": "grid-element.html",
   "scripts": {
