@@ -1,6 +1,6 @@
 <!--
 @license
-Copyright (c) 2015 Charbel Rami. All rights reserved.
+Copyright (c) 2015-2016 Charbel Rami. All rights reserved.
 MIT
 -->
 <dom-module id="grid-col">
@@ -8,30 +8,24 @@ MIT
     <style>
       :host([match]) {
         min-width: 0;
-        -webkit-flex-basis: 0;
         -ms-flex-preferred-size: 0;
         flex-basis: 0;
-        -webkit-flex-shrink: 0;
         -ms-flex-negative: 0;
         flex-shrink: 0;
       }
       :host([center][match]) {
-        -webkit-align-self: center;
         -ms-flex-item-align: center;
         align-self: center;
       }
       :host([start][match]) {
-        -webkit-align-self: flex-start;
         -ms-flex-item-align: start;
         align-self: flex-start;
       }
       :host([end][match]) {
-        -webkit-align-self: flex-end;
         -ms-flex-item-align: end;
         align-self: flex-end;
       }
       :host([stretch][match]) {
-        -webkit-align-self: stretch;
         -ms-flex-item-align: stretch;
         align-self: stretch;
       }
@@ -53,6 +47,8 @@ MIT
         }
       },
       ready: function() {
+        this.style.WebkitBoxFlex = this.s;
+        this.style.MsFlexPositive = this.s;
         this.style.flexGrow = this.s;
         var self = this;
         Polymer.dom(this).parentNode.addEventListener('mq-match', function(e) {

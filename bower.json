@@ -10,6 +10,8 @@
     "grid",
     "flexbox",
     "polymer",
+    "custom-element",
+    "custom-elements",
     "web-component",
     "web-components"
   ],

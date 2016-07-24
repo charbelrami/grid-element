@@ -31,8 +31,6 @@ $ npm run lint
 $ npm run serve
 ```
 
-- Navigate to http://localhost:8080/components/grid-element/
-
 ### Bump version
 
 ```sh
