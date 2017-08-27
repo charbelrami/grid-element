@@ -20,12 +20,12 @@ MIT
         flex-direction: column;
       }
       :host([gho]) {
-        padding-left: var(--grid-gutter-ho, --grid-gutter);
-        padding-right: var(--grid-gutter-ho, --grid-gutter);
+        padding-left: var(--grid-gutter-ho, var(--grid-gutter));
+        padding-right: var(--grid-gutter-ho, var(--grid-gutter));
       }
       :host([gvo]) {
-        padding-top: var(--grid-gutter-vo, --grid-gutter);
-        padding-bottom: var(--grid-gutter-vo, --grid-gutter);
+        padding-top: var(--grid-gutter-vo, var(--grid-gutter));
+        padding-bottom: var(--grid-gutter-vo, var(--grid-gutter));
       }
       :host([match]) {
         -webkit-box-orient: horizontal;
@@ -53,22 +53,22 @@ MIT
         -ms-grid-row-align: flex-end;
         align-items: flex-end;
       }
-      :host([ghi][match]) > ::content > grid-col {
-        margin-left: var(--grid-gutter-hi, --grid-gutter);
+      :host([ghi][match]) > ::slotted(grid-col)  {
+        margin-left: var(--grid-gutter-hi, var(--grid-gutter));
       }
-      :host([ghi][match]) > ::content > .first {
+      :host([ghi][match]) > ::slotted(.first) {
         margin-left: 0 !important;
       }
-      :host([gvi]:not([match])) > ::content > grid-col {
-        margin-top: var(--grid-gutter-vi, --grid-gutter);
+      :host([gvi]:not([match])) > ::slotted(grid-col) {
+        margin-top: var(--grid-gutter-vi, var(--grid-gutter));
       }
-      :host([gvi]:not([match])) > ::content > .first {
+      :host([gvi]:not([match])) > ::slotted(.first) {
         margin-top: 0 !important;
       }
     </style>
     <iron-media-query query="{{mq}}" query-matches="{{match}}"></iron-media-query>
 
-    <content></content>
+    <slot></slot>
   </template>
   <script>
     Polymer({
@@ -107,12 +107,13 @@ MIT
         }
       },
       ready: function() {
-        this.customStyle['--grid-gutter'] = this.gs;
-        this.customStyle['--grid-gutter-ho'] = this.gho;
-        this.customStyle['--grid-gutter-vo'] = this.gvo;
-        this.customStyle['--grid-gutter-hi'] = this.ghi;
-        this.customStyle['--grid-gutter-vi'] = this.gvi;
-        this.updateStyles();
+        this.updateStyles({
+          '--grid-gutter':this.gs,
+          '--grid-gutter-ho':this.gho,
+          '--grid-gutter-vo':this.gvo,
+          '--grid-gutter-hi':this.ghi,
+          '--grid-gutter-vi':this.gvi
+        });
         Polymer.dom(this).firstElementChild.classList.add('first');
       },
       attached: function() {
